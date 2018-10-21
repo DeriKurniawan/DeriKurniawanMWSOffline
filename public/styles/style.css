@@ -1,0 +1,127 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  nav {
+    height: auto;
+    width: 98.68%;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    background: transparent;
+  }
+
+  .search-container {
+    height: auto;
+    padding: 5px 15px;
+    border: 1px solid #cfcfcf;
+    width: 35%;
+    margin-left: auto;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,.21);
+    transition: ease .7s;
+  }
+
+  .search-container input {
+    color: #6a6a6a;
+    font-size: 16px;
+    width: 90%;
+    padding: 5px 10px;
+    border: 0;
+    font-weight: 300;
+  }
+
+  .search-container img {
+      width: 15px;
+      height: 15px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .search-container:hover {
+    box-shadow: unset;
+  }
+
+  .search-container .search-icon {
+    display: inline-block;
+  }
+
+  main {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .map-container {
+    width:100%;
+    height:100%;
+  }
+
+  #my-maps {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+      .search-container {
+          margin-right: auto;
+          width: 70%;
+      }
+
+      .search-container input {
+          font-size: 13px;
+          width: 85%;
+      }
+
+      .search-container img {
+          width: 12px;
+          height: 12px;
+      }
+  }
+
+  @media only screen and (min-width: 601px) {
+    .search-container {
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .search-container input {
+        font-size: 13px;
+        width: 85%;
+    }
+
+    .search-container img {
+        width: 11px;
+        height: 11px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .search-container {
+        margin-right: 0;
+        margin-left: auto;
+        width: 35%;
+    }
+
+    .search-container input {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .search-container img {
+        width: 14px;
+        height: 14px;
+    }
+  }
